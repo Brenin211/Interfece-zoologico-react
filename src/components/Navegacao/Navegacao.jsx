@@ -3,8 +3,8 @@ import './Navegacao.css'
 function Navegacao() {
 
     return(
-        <div className="barra-navegacao">  
-            <div className='logo-zoo'>
+        <div className="barra-navegacao">
+            <div className="logo-zoo">
                 <h1>ZOOLÓGICO</h1>
             </div>
 
@@ -21,4 +21,4 @@ function Navegacao() {
     );
 }
 
-export default Navegacao
+export default Navegacao;
