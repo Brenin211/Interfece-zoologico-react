@@ -1,13 +1,12 @@
 import './Fotos.css';
-import '../../../src/index.css'
+import Navegacao from '../../components/Navegacao/Navegacao';
 import ImgCarrossel from '../../components/ImgCarrossel/ImgCarrossel';
-import Navegacao from '../../components/Navegacao/Navegacao.jsx';
 
 function Fotos() {
     return(
         <>
             <Navegacao />
-            <h1>Fotos</h1>
+            <h1 className='h1-fotos'>Fotos</h1>
             <ImgCarrossel />
         </>
     );

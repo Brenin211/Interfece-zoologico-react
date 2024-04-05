@@ -1,29 +1,30 @@
 import './ImgCarrossel.css'
 import Carousel from 'react-bootstrap/Carousel';
-import {useEffect, useState} from 'react';
-import jsonData from '../../assets/json/imagens.json'
+import { useState, useEffect } from 'react';
+import jsonData from '../../assets/json/imagens.json';
 
 function ImgCarrossel() {
-    const [ImgCarrossel, setImgCarrossel] = useState([]);
+    const [imgCarrossel, setImgCarrossel] = useState([]);
 
     useEffect(() => {
-        setCarouselImagens(jsonData);
-    }, []);
+        setImgCarrossel(jsonData);
+    });
+
     return (
         <div className='ctn-carrossel'>
             <Carousel>
-                <Carousel.Item interval={1500}>
-                    <img
-                        className="d-block w-100"
-                        src={ImageBitmap.src}
-                        alt={ImageBitmap.caption}
-                        style={{"height": "600px"}}
-                    />
-                    <Carousel.Caption>
-                        <h3>{Imagem.caption}</h3>
-                        <p>{Animal.text}</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
+                {imgCarrossel.map(animal => (
+                    <Carousel.Item key={animal.index} interval={3000}>
+                        <img
+                            className="d-block w-100"
+                            src={animal.src}
+                            alt={animal.index}
+                        />
+                        <Carousel.Caption>
+                            <h3>{animal.caption}</h3>
+                            <p>{animal.text}</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>))}
             </Carousel>
         </div>
     );

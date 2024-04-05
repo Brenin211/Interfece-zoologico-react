@@ -1,4 +1,4 @@
-import './Navegacao.css'
+import './Navegacao.css';
 import { Link } from 'react-router-dom';
 
 function Navegacao() {
@@ -12,19 +12,19 @@ function Navegacao() {
             <div className="navbar-opcoes">
                 <ul>
                     <li>
-                        <Link style={{color:"#A7A000"}} to="/">Início</Link>
+                        <Link style={{color: "#A7A000"}} to="/">Início</Link>
                     </li>
                     <li>
-                        <Link style={{color:"#A7A000"}} to="/animais">Os animais</Link>
+                        <Link style={{color: "#A7A000"}} to="/animais">Os Animais</Link>
                     </li>
                     <li>
-                        <Link style={{color:"#A7A000"}} to="/fotos">Fotos</Link>
+                        <Link style={{color: "#A7A000"}} to="/fotos">Fotos</Link>
                     </li>
                     <li>
-                        <Link style={{color:"#A7A000"}} to="/depoimentos">Depoimentos</Link>
+                        <Link style={{color: "#A7A000"}} to="/depoimentos">Depoimentos</Link>
                     </li>
                     <li>
-                        <Link style={{color:"#A7A000"}} to="/login">Login</Link>
+                        <Link style={{color: "#A7A000"}} to="/cadastro">Cadastro</Link>
                     </li>
                 </ul>
             </div>
